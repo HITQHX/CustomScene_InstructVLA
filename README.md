@@ -6,7 +6,7 @@
     <br>
     * Equal Contributions
     <br>
-    University of Science and Technology of China, Zhejiang University, <br> Shanghai Artificial Intelligence Laboratory
+    University of Science and Technology of China, Zhejiang University <br> Shanghai Artificial Intelligence Laboratory
     <br>
   </p>
 
