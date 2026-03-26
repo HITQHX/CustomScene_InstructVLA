@@ -150,3 +150,10 @@ data/
 trash/
 
 bunny_dataset/
+
+dlimp/
+
+ckpt/
+model/
+
+SimplerEnv/ManiSkill2_real2sim/

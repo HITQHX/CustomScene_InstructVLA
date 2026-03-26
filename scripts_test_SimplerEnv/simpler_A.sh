@@ -1,11 +1,25 @@
 # you only need to change ckpt_path
-ckpt_path="TBD"
+ckpt_path="/root/autodl-tmp/InstructVLA/model/instructvla_finetune_v2_xlora_freeze_head_instruction/checkpoints/step-013500-epoch-01-loss=0.1093.pt"
 
 export LD_LIBRARY_PATH=~/miniconda3/envs/instructvla/lib/python3.10/site-packages/nvidia/cudnn/lib:$LD_LIBRARY_PATH
 export LD_PRELOAD=~/miniconda3/envs/instructvla/lib/python3.10/site-packages/nvidia/cudnn/lib/libcudnn_ops_infer.so.8
 export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
 
-if [ -z "$1" ]; then
+export SVULKAN2_HEADLESS=1
+export MANISKILL2_HEADLESS=1
+export SIMPLER_ENV_HEADLESS=1
+export DISPLAY=:1
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+
+# if [ -z "$1" ]; then
+#     NUM=$1
+#     CUR=$2
+# else
+#     NUM=1
+#     CUR=0
+# fi
+
+if [ -n "$1" ] && [ -n "$2" ]; then
     NUM=$1
     CUR=$2
 else
